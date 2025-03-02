@@ -1,9 +1,5 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
 import {
-  fetchUserData,
-  updateUserProfile as apiUpdateUserProfile,
-} from '@services/userService';
-import {
   fetchUserStart,
   fetchUserSuccess,
   fetchUserFailure,
@@ -11,6 +7,10 @@ import {
   UserState,
 } from '@redux/slices/userSlice';
 import {AppDispatch} from '@redux/store';
+import {
+  fetchUserData,
+  updateUserProfile as apiUpdateUserProfile,
+} from '../../services/userService';
 
 // Thunk for fetching user data
 export const fetchUser = createAsyncThunk<void, void, {dispatch: AppDispatch}>(

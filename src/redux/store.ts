@@ -1,5 +1,7 @@
 import {configureStore} from '@reduxjs/toolkit';
-import {colorsSlice, configSlice, userSlice} from '@redux/slices';
+import userSlice from '@redux/slices/userSlice';
+import colorsSlice from '@redux/slices/colorsSlice';
+import configSlice from '@redux/slices/configSlice';
 
 export const store = configureStore({
   reducer: {
