@@ -1,4 +1,4 @@
-/* eslint-disable import/no-unresolved */
+ 
 /** @type {import('metro-config').MetroConfig} */
 const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 const path = require('path');
